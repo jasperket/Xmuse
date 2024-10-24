@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #ae0000;
+  --button-color: #96d82b;
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: url("../images/snow_pattern.png"),
+    url("../images/snow_pattern2.png");
+  background-repeat: repeat, repeat;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-family: "Pacifico";
+  line-height: 1;
+}
+
+.hero-title div {
+  font-family: "ChunkFive Ex";
+}

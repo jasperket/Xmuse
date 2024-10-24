@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "GLYPHICONS Halflings";
+  src: url("../fonts/GLYPHICONSHalflings-Regular.woff2") format("woff2"),
+    url("../fonts/GLYPHICONSHalflings-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ChunkFive Ex";
+  src: url("../fonts/ChunkFiveEx.woff2") format("woff2"),
+    url("../fonts/ChunkFiveEx.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico-Regular.woff2") format("woff2"),
+    url("../fonts/Pacifico-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway.woff2") format("woff2"),
+    url("../fonts/Raleway.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
