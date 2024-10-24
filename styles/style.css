@@ -2,6 +2,11 @@
   --bg-color: #ae0000;
   --button-color: #96d82b;
   --button-shadow: #7aa440;
+  --white-bg: #eaf7f8;
+}
+
+.spacer {
+  padding: 1rem;
 }
 
 body {
@@ -57,18 +62,19 @@ body {
 
 .deer-1 {
   position: absolute;
-  top: 60%;
-  left: 30%;
+  top: -5rem;
+  left: -12rem;
 }
 
 .deer-2 {
   position: absolute;
-  top: 60%;
-  right: 30%;
+  top: -5rem;
+  right: -12rem;
 }
 
 .button-container {
   margin-top: 1rem;
+  position: relative;
 }
 
 .green-button {
@@ -82,10 +88,66 @@ body {
   padding: 1rem 4rem;
   font-size: 1.25rem;
   border-radius: 0.5rem;
-  align-self: flex-start;
+}
+
+.btn-sm {
+  padding-inline: 3rem;
 }
 
 .green-button:hover {
   background-color: #88c427;
   transition: background-color 0.3s ease;
+}
+
+.second-section {
+  background-color: var(--white-bg);
+  padding: 8rem 2rem 4rem;
+}
+
+.second-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.second-heading h2 {
+  font-family: "ChunkFive Ex";
+  font-size: 2.5rem;
+}
+
+.second-heading p {
+  font-family: "Raleway";
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-img {
+  background-image: url("../images/product_background_01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-text {
+  text-align: center;
+}
+
+.product-text p {
+  font-family: "Raleway";
+}
+
+.product-text strong {
+  font-family: "ChunkFive Ex";
+  font-size: 1.5rem;
 }
