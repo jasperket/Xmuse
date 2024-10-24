@@ -1,6 +1,7 @@
 :root {
   --bg-color: #ae0000;
   --button-color: #96d82b;
+  --button-shadow: #7aa440;
 }
 
 body {
@@ -8,6 +9,15 @@ body {
   background-image: url("../images/snow_pattern.png"),
     url("../images/snow_pattern2.png");
   background-repeat: repeat, repeat;
+  background-position: center, center;
+}
+
+.red-blink {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .hero-content {
@@ -15,14 +25,67 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: white;
+  margin-top: 6rem;
+  gap: 2rem;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 7rem;
   font-family: "Pacifico";
-  line-height: 1;
+  line-height: 0.85;
 }
 
 .hero-title div {
   font-family: "ChunkFive Ex";
+  font-size: 11rem;
+}
+
+.clearance-discount {
+  font-family: "Raleway";
+  line-height: 1;
+}
+
+.clearance-discount h3 {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+
+.clearance-discount h2 {
+  font-size: 7.5rem;
+}
+
+.deer-1 {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+}
+
+.deer-2 {
+  position: absolute;
+  top: 60%;
+  right: 30%;
+}
+
+.button-container {
+  margin-top: 1rem;
+}
+
+.green-button {
+  background-color: var(--button-color);
+  border: 0;
+  box-shadow: 0 0.25rem 0 var(--button-shadow);
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  padding: 1rem 4rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  align-self: flex-start;
+}
+
+.green-button:hover {
+  background-color: #88c427;
+  transition: background-color 0.3s ease;
 }
