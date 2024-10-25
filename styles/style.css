@@ -190,11 +190,12 @@ body {
 
 .fifth-section,
 .seventh-section {
-  padding: 4rem 6rem;
+  padding: 6rem;
 }
 
 .seventh-section {
   position: relative;
+  margin-bottom: 3rem;
 }
 
 .red-blink-seventh {
@@ -216,4 +217,41 @@ body {
   width: 25%;
   padding: 1rem;
   border-radius: 0.5rem;
+}
+
+.footer {
+  background-color: var(--white-bg);
+  padding: 4rem 2rem 1rem;
+}
+
+.footer-desc {
+  margin-top: 2rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icons img {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.copyright {
+  text-align: center;
 }
