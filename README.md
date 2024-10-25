@@ -1,8 +1,8 @@
 TODO
 
 - [x] Add base html structure
-- [ ] Add styles
+- [x] Add styles
 - [x] Add sliders
-- [ ] Implement mobile responsiveness
+- [x] Implement mobile responsiveness
 - [ ] Add nav
 - [ ] Add scroll animation
