@@ -122,15 +122,18 @@ body {
   font-size: 7.5rem;
 }
 
-.deer-1 {
+.deer-1,
+.deer-2 {
   position: absolute;
   top: -5rem;
+  transition: transform 0.3s ease-out;
+}
+
+.deer-1 {
   left: -12rem;
 }
 
 .deer-2 {
-  position: absolute;
-  top: -5rem;
   right: -12rem;
 }
 
@@ -157,9 +160,13 @@ body {
   padding-inline: 3rem;
 }
 
-.green-button:hover {
-  background-color: #88c427;
-  transition: background-color 0.3s ease;
+.trees-container {
+  background-image: url("../images/trees_pattern_01.png");
+  background-repeat: repeat;
+}
+
+.trees-pattern {
+  opacity: 0;
 }
 
 .second-section {
@@ -197,6 +204,11 @@ body {
   background-image: url("../images/product_background_01.png");
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.product-img:hover {
+  background-image: url("../images/product_background_02.png");
 }
 
 .product-text {
@@ -280,6 +292,11 @@ body {
   width: min(30rem, 80%);
   padding: 1rem;
   border-radius: 0.5rem;
+  background-color: rgb(233, 233, 233);
+}
+
+.input-field:hover {
+  background-color: white;
 }
 
 .footer {
@@ -304,6 +321,10 @@ body {
   text-align: center;
 }
 
+.hover-green:hover {
+  color: var(--button-color);
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -314,6 +335,38 @@ body {
 .social-icons img {
   border: 1px solid black;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+#fbIcon:hover {
+  background-color: #3b5998;
+  border-color: none;
+}
+
+#twitterIcon:hover,
+#vimeoIcon:hover {
+  background-color: #00acee;
+  border-color: none;
+}
+
+#gplusIcon:hover {
+  background-color: #dd4b39;
+  border-color: none;
+}
+
+#instagramIcon:hover {
+  background-color: #6c4e3c;
+  border-color: none;
+}
+
+#pinterestIcon:hover {
+  background-color: #cb2027;
+  border-color: none;
+}
+
+#tumblrIcon:hover {
+  background-color: #35465c;
+  border-color: none;
 }
 
 .copyright {

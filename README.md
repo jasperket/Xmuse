@@ -5,4 +5,4 @@ TODO
 - [x] Add sliders
 - [x] Implement mobile responsiveness
 - [x] Add nav
-- [ ] Add scroll animation
+- [x] Add scroll animation

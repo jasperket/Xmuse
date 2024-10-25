@@ -7,7 +7,6 @@ $(document).ready(function () {
   });
 });
 
-// Navbar hover effect
 document.querySelectorAll(".nav-item").forEach((item) => {
   const wrapper = item.querySelector(".nav-circle-wrapper");
   const text = item.querySelector(".nav-text");
@@ -39,7 +38,6 @@ document.querySelectorAll(".nav-item").forEach((item) => {
     text.style.pointerEvents = "none";
   });
 
-  // Add click event listener for smooth scrolling
   text.addEventListener("click", (e) => {
     e.preventDefault();
     const targetId = text.getAttribute("data-target");
@@ -51,4 +49,63 @@ document.querySelectorAll(".nav-item").forEach((item) => {
       });
     }
   });
+});
+
+window.addEventListener("scroll", function () {
+  const scrollPosition = window.scrollY;
+  const leftDeer = document.getElementById("leftDeer");
+  const rightDeer = document.getElementById("rightDeer");
+  const body = document.querySelector("body");
+  const trees = document.querySelectorAll(".trees-container");
+
+  const maxMove = 800;
+
+  const position = Math.min(maxMove, scrollPosition * 1.5);
+
+  leftDeer.style.transform = `translate(-${position}px, -${position}px)`;
+  rightDeer.style.transform = `translate(${position}px, -${position}px)`;
+
+  const backgroundPosition = scrollPosition * 3;
+  body.style.backgroundPosition = `0 ${backgroundPosition}px`;
+
+  trees.forEach((tree) => {
+    const treePosition = scrollPosition * 1.5;
+    tree.style.transform = `translateX(-${treePosition}px)`;
+    const width = tree.offsetWidth + treePosition;
+    tree.style.width = `${width}px`;
+  });
+});
+
+const contactImgs = document.querySelectorAll(".contact-item img");
+
+contactImgs.forEach((img) => {
+  img.addEventListener("mouseenter", () => {
+    const currSrc = img.src;
+    img.src = currSrc.replace("01", "02");
+  });
+  img.addEventListener("mouseleave", () => {
+    const currSrc = img.src;
+    img.src = currSrc.replace("02", "01");
+  });
+});
+
+const socialIcons = document.querySelectorAll(".social-icons img");
+
+socialIcons.forEach((icon) => {
+  icon.addEventListener("mouseenter", () => {
+    const currSrc = icon.src;
+    icon.src = currSrc.replace("01", "02");
+  });
+  icon.addEventListener("mouseleave", () => {
+    const currSrc = icon.src;
+    icon.src = currSrc.replace("02", "01");
+  });
+});
+
+let resizeTimer;
+window.addEventListener("resize", function () {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function () {
+    location.reload();
+  }, 250);
 });
