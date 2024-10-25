@@ -3,6 +3,7 @@
   --button-color: #96d82b;
   --button-shadow: #7aa440;
   --white-bg: #eaf7f8;
+  --nav-green: #7bd300;
 }
 
 .spacer {
@@ -16,6 +17,67 @@ body {
   background-repeat: repeat, repeat;
   background-position: center, center;
   font-family: "Raleway", sans-serif;
+}
+
+.navigation {
+  position: fixed;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  z-index: 999;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0.25rem;
+}
+
+.nav-circle-wrapper {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-text {
+  color: white;
+  font-size: 0.8rem;
+  background-color: var(--nav-green);
+  border-radius: 100vh;
+  padding: 0 1rem;
+  width: 8rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  pointer-events: none; /* Prevents interaction when invisible */
+}
+
+.nav-circle {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-color: var(--nav-green);
+  transition: all 0.3s ease;
+}
+
+.nav-circle-wrapper:hover .nav-circle {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.nav-circle-wrapper:hover + .nav-text,
+.nav-text:hover {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .red-blink {
@@ -259,6 +321,9 @@ body {
 }
 
 @media (max-width: 866px) {
+  .navigation {
+    display: none;
+  }
   .second-section {
     padding-top: 2rem;
   }
