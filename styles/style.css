@@ -161,7 +161,8 @@ body {
   margin: 0 auto;
 }
 
-.fourth-section {
+.fourth-section,
+.sixth-section {
   background-color: var(--white-bg);
   padding: 4rem 6rem;
 }
@@ -185,4 +186,34 @@ body {
 .price-container p {
   font-size: 2rem;
   text-align: center;
+}
+
+.fifth-section,
+.seventh-section {
+  padding: 4rem 6rem;
+}
+
+.seventh-section {
+  position: relative;
+}
+
+.red-blink-seventh {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-field {
+  width: 25%;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
