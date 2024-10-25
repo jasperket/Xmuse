@@ -58,9 +58,7 @@ window.addEventListener("scroll", function () {
   const body = document.querySelector("body");
   const trees = document.querySelectorAll(".trees-container");
 
-  const maxMove = 800;
-
-  const position = Math.min(maxMove, scrollPosition * 1.5);
+  const position = scrollPosition * 1.5;
 
   leftDeer.style.transform = `translate(-${position}px, -${position}px)`;
   rightDeer.style.transform = `translate(${position}px, -${position}px)`;
