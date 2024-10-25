@@ -97,6 +97,7 @@
 
 .slick-next {
   right: 2rem;
+  z-index: 1000;
 }
 [dir="rtl"] .slick-next {
   right: auto;
