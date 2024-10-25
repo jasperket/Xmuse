@@ -104,7 +104,7 @@ body {
   padding: 8rem 2rem 4rem;
 }
 
-.second-heading {
+.section-heading {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -112,12 +112,12 @@ body {
   gap: 1rem;
 }
 
-.second-heading h2 {
+.section-heading h2 {
   font-family: "ChunkFive Ex";
   font-size: 2.5rem;
 }
 
-.second-heading p {
+.section-heading p {
   font-family: "Raleway";
 }
 
@@ -150,4 +150,25 @@ body {
 .product-text strong {
   font-family: "ChunkFive Ex";
   font-size: 1.5rem;
+}
+
+.third-section {
+  margin-top: 5rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.promo-video {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  height: 40rem;
+  margin: 0 auto;
+}
+
+.fourth-section {
+  background-color: var(--white-bg);
+  padding: 4rem 2rem;
 }
