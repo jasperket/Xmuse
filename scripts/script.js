@@ -99,11 +99,3 @@ socialIcons.forEach((icon) => {
     icon.src = currSrc.replace("02", "01");
   });
 });
-
-let resizeTimer;
-window.addEventListener("resize", function () {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(function () {
-    location.reload();
-  }, 250);
-});

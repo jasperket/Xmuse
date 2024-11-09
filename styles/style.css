@@ -88,6 +88,10 @@ body {
   z-index: -1;
 }
 
+.main-container {
+  overflow: hidden;
+}
+
 .hero-content {
   display: flex;
   flex-direction: column;
